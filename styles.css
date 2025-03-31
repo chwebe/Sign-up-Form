@@ -122,8 +122,13 @@ input:focus {
     box-shadow: 0 0 0 2px rgba(89, 109, 72, 0.1);
 }
 
+input:not(:placeholder-shown):valid {
+    
+}
 
-
+input:not(:placeholder-shown):invalid {
+    border: 1px solid red;
+}
 
 .form-submit {
     padding: var(--general-padding);
@@ -146,6 +151,7 @@ input:focus {
     box-shadow: 0 5px 15px rgba(89, 109, 72, 0.4);
     background-color: #6b824f;
 }
+
 
 .log-in{
     font-weight: 500;

@@ -2,6 +2,7 @@
     font-family: 'Poppins', sans-serif;
     --primary-color:#F9FAFB;
     --secondary-color:#596D48;
+    --padding: 3rem;
 }
 
 @font-face {
@@ -67,5 +68,55 @@ body {
     display: flex;
     flex-direction: column;
     flex: 2;
-    padding: 3rem;
+    
+}
+
+.header-container{
+    width: 80%;
+    padding: var(--padding);
+    margin: 3rem 0; 
+}
+
+.form-container {
+    background: #fff;
+    padding: var(--padding);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 70%;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 50%;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 1.2rem;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(89, 109, 72, 0.1);
 }
